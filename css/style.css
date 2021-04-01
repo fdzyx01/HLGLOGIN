@@ -1,0 +1,445 @@
+*{margin:0px; padding:0px;}
+.header{
+    height: 135px;
+    width: auto;
+    background-color: cornflowerblue;
+    background-repeat: no-repeat;
+}
+
+/* NAV */
+.nav{
+    z-index: 99;
+    height: 50px;
+    width: auto;
+    position: relative;  
+    background-color: dodgerblue;
+}
+.box{
+     z-index: 999;
+    height: 40px;
+    width: 1500px;
+    position: relative;
+}
+.box ul{
+    float: left;
+    height: 40px;
+    position: absolute;
+}
+.box ul li{
+    list-style: none;
+    float: left;
+    width:120px; 
+    height:40px; 
+    line-height:40px; 
+    text-align:center; 
+    position: relative;
+} 
+.box ul li a{
+    color: white;
+    text-align:center; 
+    font-size:16px;  
+    display:block; 
+}
+.box ul li:hover{
+    background:#5c7eff;
+}
+.box ul li:hover ul{
+    display:block;
+}
+.box ul li:hover a{ 
+    color:white;
+}
+.box ul li ul{
+    display: none;
+    height: auto;
+    background-color: cornflowerblue;
+    position: absolute; 
+    width:140px 
+}
+.box ul li ul li{
+    width:140px; 
+}
+.box ul li ul li a{ 
+    color:#333333; 
+    font-size:14px; 
+} 
+
+/* PHOTO */
+#bkouter{
+    width: 100%;
+    height: 445px;
+    background-color: rgb(47, 68, 255);
+}
+#outer{
+    width: 1220px;
+    height: 425px;
+    margin: 0px auto;
+    background-color: rgb(47, 172, 255);
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+#imgList{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+#imgList li{
+    margin: 0 10px;
+}
+#navDiv{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#navDiv a{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: cyan;
+    margin: 0 5px;
+    opacity: 0.5;
+}
+#imgLeft a{
+    text-decoration: none;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    background-color:cyan;
+    opacity: 0.3;
+    color: white;
+}
+#imgLeft a:hover{
+    background-color: rgb(47, 172, 255);
+    opacity: 0.7;
+    color: white;
+}
+#imgRight a{
+    text-decoration: none;
+    position: absolute;
+    left: 1185px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    background-color: cyan;
+    opacity: 0.3;
+    color: white;
+}
+#imgRight a:hover{
+    background-color: rgb(47, 172, 255);
+    opacity: 0.7;
+    color: white;
+}
+
+/* lgyw */
+#lgywbk{
+    float: left;
+}
+#lgyw{
+    height: 40px;
+    width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+#lgyw a{
+    font-size: 25; 
+    color: rgb(0, 60, 255);
+    vertical-align: top;
+}
+.unline {
+    height: 0;
+    width: 1000px;
+    position: absolute;
+    border-top: 2px blue solid;
+    top: 50%;
+    left: 165px;
+}
+#lgywouter{
+    width: 420px;
+    height: 208px;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;  
+    float: left;
+}
+#lgywList{
+    list-style: none;
+    display: flex;
+    position: absolute;
+}
+#lgywList li{
+    margin: 0 10px;
+}
+#lgywList li img{
+    width: 400px;
+    height: 208px;
+}
+#lgywDiv{
+    position: absolute;
+    bottom: 15px;
+    left: 80%;
+    transform: translateX(-20%);
+}
+#lgywDiv a{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: cyan;
+    margin: 0 5px;
+    opacity: 0.7;
+}
+#lgywDiv a:hover{
+    background-color: rgba(22, 18, 243, 0.89);
+}
+#lgywA {
+    height: 30px;
+    width: 300px;
+    top: 120%;
+    transform: translateY(20%);
+}            
+#lgywA p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+#lgywUL{
+    float: left;
+    width: 460px;
+    height: 208;
+    top: 105%;
+    transform: translateY(5%);
+    margin: 0 20px;
+}
+#lgywUL ul{
+    /* list-style: none; */
+    color: darkgrey;
+}
+#lgywUL ul li{
+    margin: 4.5px 0;
+    width: 460px;
+    position: relative;
+}
+#lgywUL ul li a{
+    display: block;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    white-space: nowrap;
+}
+#lgywUL ul li a:hover{
+    color: rgb(38, 71, 255);
+}
+ #lgywUL ul li span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+} 
+
+/* tzgg */
+#tzggbk{
+    float: right;
+}
+#tzgg{
+    height: 40px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#tzgg a{
+    font-size: 25; 
+    color: rgb(0, 60, 255);
+    vertical-align: top;
+}
+.time-left{
+    height: 54px; 
+    width: 54px; 
+    border-radius: 50%; 
+    background-color: rgb(56, 59, 238);
+    float: left;
+    
+}
+.time-left span{
+    display: block; 
+    width: 54px; 
+    color:#fff; 
+    text-align: center;
+}
+.time1{
+    font-size: 18px; 
+    height: 34px; 
+    line-height: 34px;
+}
+.time2{
+    font-size: 10px;
+    height: 22px; 
+    line-height: 12px;
+}
+.LI-right{
+    height: 54px;
+    width: 436px;
+    float: right;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darkgrey;
+}
+.LI-right a:hover{
+    color: blue;
+}
+#tzggUL{
+    list-style: none;
+}
+
+/* fwdh */
+#fwdhbk{
+    width: 900px;
+    float: left;
+}
+#fwdh{
+    height: 40px;
+    width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+#fwdh a{
+    font-size: 25; 
+    color: rgb(0, 60, 255);
+    vertical-align: top;
+}
+#fwdhwork{
+    position: relative;
+    height: 120px;
+    width: 880px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#fwdhwork ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+}
+#fwdhwork ul li{
+    margin: 15px 20px;
+}
+#fwdhwork ul li div{
+    width: 70px;
+    height: 90px;
+    position: relative;
+    text-align: center;
+}
+#fwdhwork ul li div img{
+    width: 70px;
+    height: 70px;
+}
+#fwdhwork ul li div a:hover{
+    color: blue;
+}
+#fwdhLeft a{
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: gray;
+}
+#fwdhRight a{
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 855px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: gray;
+}
+
+/* mtlg */
+#mtlgwork{
+    width: 900px;
+    height: 200px;
+    position: relative;
+}
+#mtlgwork ul ul{
+    display: flex;
+    list-style: none;
+}
+.mtlg-left{
+    margin: 10px 0 10px 8px;
+    height: 80px; 
+    width: 80px; 
+    background-color: white;
+    float: left;
+    border: 1px solid gray;
+}
+.mtlg-left span{
+    display: block; 
+    width: 80px; 
+    height: 40px;
+    color:#fff; 
+    text-align: center;
+    line-height: 50px;
+}
+.mtlg-right{
+    height: 80px;
+    width: 360px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darkgrey;
+}
+.mtlg-right a{
+    text-decoration: none;
+    color: black;
+}
+.mtlg-right a:hover{
+    color: blue;
+}
+
+/* ycdt */
+#ycdtbk{
+    margin-left: 20px;
+    width: 500px;
+    float: left;
+}
+#ycdt{
+    height: 40px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#ycdt a{
+    font-size: 25; 
+    color: rgb(0, 60, 255);
+    vertical-align: top;
+}
+#ycdtwork{
+    width: 470px;
+    height: 360px;
+    margin-left: 30px;
+}
+#ycdtwork ul{
+    color: darkgrey;
+}
+#ycdtwork ul li{
+    margin: 10px 0;
+    width: 460px;
+    position: relative;
+}
+#ycdtwork ul li a{
+    display: block;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17;
+    color: black;
+    text-decoration: none;
+}
+#ycdtwork ul li a:hover{
+    color: blue;
+}
